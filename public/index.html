@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Список покупок</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1> Список покупок</h1>
+        </header>
+
+        <main>
+            <section class="add-product">
+                <h2>Добавить товар</h2>
+                <form id="addForm">
+                    <input type="text" id="productName" placeholder="Название товара" required>
+                    <input type="number" id="productQuantity" placeholder="Количество" value="1" min="1">
+                    <button type="submit">Добавить</button>
+                </form>
+            </section>
+
+            <section class="search">
+                <h2>Поиск товаров</h2>
+                <input type="text" id="searchInput" placeholder="Введите название...">
+            </section>
+
+            <section class="products-list">
+                <h2>Мои покупки</h2>
+                <div id="productsContainer">
+                    <!-- Товары будут загружены здесь -->
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>Express.js приложение - Список покупок</p>
+        </footer>
+    </div>
+
+    <script src="/js/main.js"></script>
+</body>
+</html>
